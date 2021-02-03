@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>This is event handler</h1>
+
+
+<h3>Saya mau pergi : </h3>
+
+<ul>
+    <li class= 'bandung'>Bandung <button id="clik">Clic</button> <button id="hapus">x</button>
+        
+    </li> 
+    <li>Medan</li>
+    <li>jakarta</li>
+
+</ul>
+<script src="https://code.jquery.com/jquery-3.5.1.slim.js" integrity="sha256-DrT5NfxfbHvMHux31Lkhxg42LY6of8TaYyK50jnxRnM=" crossorigin="anonymous"></script>
+
+<script>
+    $(document).ready(function(){
+
+        $('#clik').on('click',function(){
+            alert('saya pergi ke bandung');
+        });
+
+        $('#hapus').on('click',function(){
+            $('.bandung').remove();
+        });
+    });
+</script>
+</body>
+
+</html>
